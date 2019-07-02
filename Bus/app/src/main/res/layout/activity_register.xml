@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/haa"
+    android:paddingRight="13dp"
+    android:paddingLeft="13dp"
+    tools:context="utlimate.bus.Register">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#adffffff"
+        android:alpha="0.6">
+    </RelativeLayout>
+
+<!-- Code for Hello block-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="240dp"
+        android:paddingRight="13dp"
+        android:paddingLeft="13dp"
+        android:id="@+id/hello">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:text="Veri-MI"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:text="Veri-MI"
+            android:textColor="#000"
+            android:textSize="60sp" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/logo"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="12dp"-->
+            <!--android:background="@mipmap/onlylogo" />-->
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#b7ffffff"
+        >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:focusableInTouchMode="true"
+                android:elevation="800dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+
+                android:paddingTop="10dp">
+
+                <!--<TextView
+                    android:id="@+id/registeration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name "
+                    android:textColor="#f50057"
+                    android:textSize="20sp" />-->
+
+                <!--<TextView
+                    android:id="@+id/first_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+                 android:layout_below="@+id/registeration"-->
+                <EditText
+                    android:id="@+id/edittext_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textColorHint="#FF9800"
+                    android:hint="User Name"
+                    android:drawableLeft="@drawable/ic_action_login"
+                    android:inputType="textPersonName" />
+
+
+
+                <EditText
+                    android:id="@+id/edittext_first_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/edittext_first_name"
+                    android:layout_marginTop="55dp"
+                    android:backgroundTint="#FF9800"
+                    android:textColorHint="#FF9800"
+                    android:drawableLeft="@drawable/ic_action_name"
+                    android:hint="Password"
+
+                    android:inputType="textPassword" />
+
+
+                <!--District field-
+
+                <TextView
+                    android:id="@+id/first_name_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittext_first_name1"
+                    android:layout_marginTop="25dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/choosedist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/first_name_text3"
+                    android:text="Select District"
+                    android:textColor="#f50057"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/first_name_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/choosedist"
+                    android:layout_marginTop="25dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                Spinner for district
+
+                <Spinner
+                    android:id="@+id/district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/first_name_text4"
+                    android:layout_toEndOf="@+id/first_name_text4"
+                    android:text="Select the District" />
+
+
+                Taluka field
+                <TextView
+                    android:id="@+id/first_name_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/district"
+                    android:layout_marginTop="25dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/taluka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/first_name_text5"
+                    android:text="Enter Taluka"
+                    android:textColor="#f50057"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/choosetaluka"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/taluka"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter Here"
+                    android:inputType="textPersonName" /-->
+
+
+                <Button
+                    android:id="@+id/take_me_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/edittext_first_name1"
+                    android:layout_marginTop="5dp"
+                    android:text="Login"
+
+                    android:background="@drawable/login_btn_bg"
+                    android:textColor="@android:color/white" />
+
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

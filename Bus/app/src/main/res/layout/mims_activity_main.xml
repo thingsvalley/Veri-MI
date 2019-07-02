@@ -1,0 +1,113 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MimsActivity"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:background="@mipmap/backs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
+        android:background="#adffffff">
+    </RelativeLayout>>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+
+            android:id="@+id/main">
+
+            <!--<TextView android:text = "Veri-MI"-->
+                <!--android:fontFamily="cursive"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height = "wrap_content"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:id = "@+id/textview"-->
+                <!--android:textSize = "50dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_alignParentTop = "true"-->
+                <!--android:layout_centerHorizontal = "true" />-->
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "Start Task"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:id = "@+id/textView"
+
+                android:layout_centerHorizontal = "true"
+                android:textColor = "#000"
+                android:textSize = "50dp"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            app:cardCornerRadius="15dp"
+            android:elevation="15dp"
+            app:cardBackgroundColor="#beffffff">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/editTextmims"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="#000"
+                android:focusable="true"
+                android:hint="Enter MIMS number"
+                android:textSize="15dp"
+                android:textColorHighlight="#ff7eff15"
+                android:textColorHint="#000" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editTextmims"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_btn_bg"
+                android:onClick="send"
+                android:text="login"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                 android:layout_below="@+id/button"
+                android:background="@drawable/login_btn_bg"
+                android:text="Cancel"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>

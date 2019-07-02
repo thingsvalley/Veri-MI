@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Veri-MI</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_location">Map</string>
+    <!-- Values for MainLine Size-->
+    <string-array name="mainline_size">
+        <item>Size in mm</item>
+        <item>90</item>
+        <item>75</item>
+        <item>63</item>
+        <item>50</item>
+    </string-array>
+    <!--Values for MainLine Quality-->
+    <string-array name="mainline_qty">
+        <item>Quantity</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+    <!-- Values for Lateral Size-->
+    <string-array name="lateral_size">
+        <item>Size in mm</item>
+        <item>16</item>
+        <item>12</item>
+    </string-array>
+    <!--Values for Lateral Quality-->
+    <string-array name="lateral_qty">
+        <item>Quantity</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+    <!-- Values for ControlValve Size-->
+    <string-array name="control_size">
+        <item>Size in mm</item>
+        <item>90</item>
+        <item>75</item>
+        <item>63</item>
+        <item>50</item>
+    </string-array>
+    <!--Values for ControlValve Quality-->
+    <string-array name="control_qty">
+        <item>Quantity</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+    <!-- Values for FlushValve Size-->
+    <string-array name="flush_size">
+        <item>Size in mm</item>
+        <item>90</item>
+        <item>75</item>
+        <item>63</item>
+        <item>50</item>
+    </string-array>
+    <!--Values for FlushValve Quality-->
+    <string-array name="flush_qty">
+        <item>Quantity</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+    <!-- Values for ByPass Assembly Size-->
+    <string-array name="bypass_size">
+        <item>Size in mm</item>
+        <item>1.25</item>
+        <item>1.75</item>
+
+    </string-array>
+    <!--Values for ByPass Assembly Quality-->
+    <string-array name="bypass_qty">
+        <item>Quantity</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Values for Ventury Size-->
+    <string-array name="ventury_size">
+        <item>Size in mm</item>
+        <item>0.01905</item>
+        <item>0.0254</item>
+        <item>0.0381</item>
+        <item>0.0508</item>
+    </string-array>
+
+    <!-- Values for Screen Filter Size-->
+    <string-array name="screen_size">
+        <item>Size in mm</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+
+    <!--activity_geofence_editor.xml-->
+    <string name="geofence_name">Name</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="radius">Radius (meters)</string>
+    <string name="validation_required">Required!</string>
+    <string name="validation_failed">Please complete the required fields.</string>
+</resources>

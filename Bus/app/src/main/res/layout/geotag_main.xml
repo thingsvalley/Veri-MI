@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        style="@style/Animation.AppCompat.Tooltip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+
+        android:outlineProvider="bounds"
+        android:singleLine="true"
+        android:text="Latitude:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="#FF9800"
+        android:singleLine="true"
+        android:text="0.0"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+        android:textColor="#FF9800"
+        android:textColorHint="@android:color/holo_orange_dark" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="Longitude:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:textColor="#FF9800"
+        android:text="0.0"
+        android:layout_height="32dp"
+        android:backgroundTint="#FF9800"
+        android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <TextView
+        android:text="Time of request:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="30dp"
+        android:text="0.0"
+        android:textColor="#FF9800"
+        android:backgroundTint="#FF9800"/>
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:id="@+id/label1"
+        android:text="Main PipeLine"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="30dp"
+
+        android:layout_below="@+id/label1"
+        android:id="@+id/mainLinePipe"
+        android:textColor="#FF9800"
+        android:backgroundTint="#FF9800"
+        android:layout_margin="10dp"
+        android:text="Length of Pipeline"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/imageButton1"
+            android:layout_width="40dp"
+            android:layout_height="94dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_action_camera"
+            app:backgroundTint="#ffab02" />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/selectImage"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp" />
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/fab"-->
+        <!--style="@android:style/Widget.Holo.ImageButton"-->
+        <!--android:layout_width="92dp"-->
+        <!--android:layout_height="76dp"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@drawable/cap" />-->
+
+    <ProgressBar
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+    <!--<TextView-->
+        <!--android:layout_width="92dp"-->
+        <!--android:layout_height="22dp"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@android:color/darker_gray"-->
+        <!--android:backgroundTint="@android:color/holo_orange_light"-->
+        <!--android:gravity="center_vertical|center|clip_vertical"-->
+        <!--android:text="Capture"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Menu" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:text="Sub PipeLine"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:textColor="#FF9800"
+        android:id="@+id/sublinePipe"
+        android:layout_below="@+id/label2"
+        android:text="Length of Pipline"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/imageButton2"
+            android:layout_width="40dp"
+            android:layout_height="94dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_action_camera"
+            app:backgroundTint="#ffab02" />
+</RelativeLayout>
+    <GridView
+        android:id="@+id/gridView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/selectImage"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="Others"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imageButton3"
+        android:layout_width="40dp"
+        android:layout_height="94dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_camera"
+        app:backgroundTint="#ffab02" />
+    </RelativeLayout>
+        <GridView
+            android:id="@+id/gridView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/selectImage"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/login_btn_bg"
+        android:text="Upload" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_margin="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/login_btn_bg"
+
+            android:text="Done" />
+    </RelativeLayout>
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:layout_width="116dp"-->
+            <!--android:layout_height="94dp"-->
+            <!--android:layout_gravity="end|bottom"-->
+            <!--android:layout_margin="16dp"-->
+            <!--android:src="@drawable/ic_action_camera"-->
+            <!--app:backgroundTint="#ffab02" />-->
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@mipmap/density"
+    tools:context="utlimate.bus.Density">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/hilayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:text="Attributes"
+            android:id="@+id/username"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hilayout"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Year-->
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Year"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/year1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/year"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+                <!--MIMS No-->
+                <TextView
+                    android:id="@+id/mims"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/year1"
+                    android:layout_marginTop="25dp"
+                    android:text="MIMS Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/village1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/mims"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+                <!--Beneficiary name-->
+                <TextView
+                    android:id="@+id/beneficiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/village1"
+                    android:layout_marginTop="25dp"
+                    android:text="Beneficiary Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/beneficiary1"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/beneficiary"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+
+                <!--Beneficiary Adhar-->
+                <TextView
+                    android:id="@+id/adhar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/beneficiary1"
+                    android:layout_marginTop="25dp"
+                    android:text="Beneficiary AADHAR"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/adhar1"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/adhar"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+                <!--Beneficiary Mobile-->
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adhar1"
+                    android:layout_marginTop="25dp"
+                    android:text="Beneficiary Mobile"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/mobile1"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/mobile"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+                <!--Crop Name-->
+                <TextView
+                    android:id="@+id/crop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mobile1"
+                    android:layout_marginTop="25dp"
+                    android:text="Crop Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/crop1"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/crop"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+
+                <!--Total Area-->
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crop1"
+                    android:layout_marginTop="25dp"
+                    android:text="Total Area"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/area1"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/area"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+
+                <!--Sanction Amount-->
+                <TextView
+                    android:id="@+id/sanction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/area1"
+                    android:layout_marginTop="25dp"
+                    android:text="Sanction Amount"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/sanction1"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/sanction"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+
+                <!-- Field that are to be entered by 3rd party officer -->
+                <!-- ****************************************************************************************************************-->
+
+                <!--Mainline pipe-->
+                <TextView
+                    android:id="@+id/mainline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sanction1"
+                    android:layout_marginTop="25dp"
+                    android:text="Mainline Pipe"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/mainlinesize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_below="@+id/mainline" />
+
+                <Spinner
+                    android:id="@+id/mainlineqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainline"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_toEndOf="@+id/sanction" />
+
+                <!--Lateral pipe-->
+                <TextView
+                    android:id="@+id/lateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainlinesize"
+                    android:layout_marginTop="25dp"
+                    android:text="Lateral Pipe"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/lateralsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_below="@+id/lateral" />
+
+                <Spinner
+                    android:id="@+id/lateralqty"
+                    android:layout_width="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/mainlineqty"
+                    android:layout_below="@+id/lateral" />
+
+
+                <!--control valve-->
+                <TextView
+                    android:id="@+id/control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lateralqty"
+                    android:layout_marginTop="25dp"
+                    android:text="Control Valve"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/controlsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+
+                    android:layout_below="@+id/control" />
+
+                <Spinner
+                    android:id="@+id/controlqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_alignStart="@+id/mainlineqty"
+                    android:layout_below="@+id/control" />
+
+
+                <!--Flush valve-->
+                <TextView
+                    android:id="@+id/flush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/controlqty"
+                    android:layout_marginTop="25dp"
+                    android:text="Flush Valve"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/flushsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_below="@+id/flush" />
+
+                <Spinner
+                    android:id="@+id/flushqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_alignStart="@+id/mainlineqty"
+                    android:layout_below="@+id/flush" />
+
+
+                <!--By pass assembly-->
+                <TextView
+                    android:id="@+id/bypass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flushqty"
+                    android:layout_marginTop="25dp"
+                    android:text="Bypass Assembly"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/bypasssize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_below="@+id/bypass" />
+
+                <Spinner
+                    android:id="@+id/bypassqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_alignStart="@+id/mainlineqty"
+                    android:layout_below="@+id/bypass" />
+
+
+                <!--Ventury-->
+                <TextView
+                    android:id="@+id/ventury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bypassqty"
+                    android:layout_marginTop="25dp"
+                    android:text="Ventury"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/venturysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_alignStart="@+id/mainlinesize"
+                    android:layout_below="@+id/ventury" />
+
+                <!--Screen Filter-->
+                <TextView
+                    android:id="@+id/screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/venturysize"
+                    android:layout_marginTop="25dp"
+                    android:text="Screen Filter"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/screensize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_alignStart="@+id/mainlinesize"
+                    android:layout_below="@+id/screen" />
+                <TextView
+                    android:id="@+id/spacingRowLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/screensize"
+                    android:layout_marginTop="25dp"
+                    android:text="Spacing Row"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/spacingRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter spacing row"
+                    android:backgroundTint="#f50057"
+                    android:layout_below="@+id/spacingRowLabel" />
+
+                <TextView
+                    android:id="@+id/spacingCropLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spacingRow"
+                    android:layout_marginTop="25dp"
+                    android:text="Spacing Crop"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/spacingCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter spacing crop"
+                    android:layout_below="@+id/spacingCropLabel" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isiCheck"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/spacingCrop"
+                    android:text="BIS"/>
+                <Button
+                    android:id="@+id/buttonsubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/isiCheck"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="8dp"
+                    android:onClick="submit"
+                    android:text="Submit"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/profile_btn"/>
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/isiCheck"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/profile_btn"
+                    android:layout_alignParentLeft="true"
+                    android:text="Upload"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:onClick="upload"/>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

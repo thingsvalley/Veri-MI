@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:background="@mipmap/ha"
+    android:layout_height="match_parent"
+    tools:context="utlimate.bus.Check">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="114dp"-->
+        <!--android:background="@mipmap/logo"-->
+        <!--android:id="@+id/relativeLayout5">-->
+
+    <!--</RelativeLayout>-->
+    <!--<TextView-->
+        <!--android:id="@+id/textViewbusme"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="190dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:textSize="60sp"-->
+        <!--android:text="Hortivation"-->
+        <!--android:textColor="#000000"-->
+        <!--/>-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#adffffff"
+    android:alpha="0.7">
+</RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@mipmap/newlogo" />
+
+
+    <TextView
+        android:id="@+id/punchline"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="casual"
+        android:text="More crop per drop"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

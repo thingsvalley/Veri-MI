@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="utlimate.bus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/onlylogo"
+        android:label="Veri-MI"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="utlimate.bus.Check" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="utlimate.bus.Map" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="utlimate.bus.BusMain"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name="utlimate.bus.MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name="utlimate.bus.Timepass" />
+        <activity android:name="utlimate.bus.Developer" />
+        <activity android:name="utlimate.bus.Seat" />
+        <activity android:name="utlimate.bus.MimsActivity" />
+        <activity android:name="utlimate.bus.AdharMainActivity" />
+        <activity
+            android:name="utlimate.bus.Location"
+            android:label="@string/title_activity_location" />
+        <activity
+            android:name="utlimate.bus.Density"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="utlimate.bus.Register" />
+        /*Activity for navigation Google Map*/
+        <service
+            android:name="utlimate.bus.GeofenceTransitionIntentService"
+            android:exported="false" />
+        <service
+            android:name="utlimate.bus.LocationUpdateService"
+            android:exported="false" />
+
+        <activity android:name="utlimate.bus.GetFencingData" />
+        <activity android:name="utlimate.bus.GeofenceEditorActivity" />
+
+        <!-- <activity -->
+        <!-- android:name="com.example.spinner.Density" -->
+        <!-- android:label="@string/app_name" > -->
+        <activity android:name="utlimate.bus.geotag.GeotagMainActivity" />
+        <activity android:name="utlimate.bus.ProfileActivity" />
+        <activity android:name="utlimate.bus.ChatActivity" />
+        <activity android:name="utlimate.bus.pre_inspection.PreInspectionActivity" />
+        <activity
+            android:name="utlimate.bus.pre_inspection.FormActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="utlimate.bus.pre_inspection.PreGeotagMainActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

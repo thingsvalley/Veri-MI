@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relative2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/gridImages"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="9dp"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/cancelBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginRight="-5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_close"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:visibility="visible"/>
+
+</RelativeLayout>

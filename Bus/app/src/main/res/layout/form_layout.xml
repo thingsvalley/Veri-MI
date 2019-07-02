@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@mipmap/density"
+    tools:context="utlimate.bus.Density">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/hilayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:text="Attributes"
+            android:id="@+id/username"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hilayout"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <ProgressBar
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressbar"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Year-->
+                <TextView
+                    android:id="@+id/m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="MIMS Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/mimss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/m"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+                <TextView
+                    android:id="@+id/areaoffield1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/mimss"
+                    android:text="Area of Field"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/areaoffield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/areaoffield1"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+                <!--MIMS No-->
+                <TextView
+                    android:id="@+id/ph1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/areaoffield"
+                    android:layout_marginTop="25dp"
+                    android:text="Soil pH"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/ph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/ph1"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+                <!--Beneficiary name-->
+                <TextView
+                    android:id="@+id/cropplant1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ph"
+                    android:layout_marginTop="25dp"
+                    android:text="Crop"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/cropplant"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/cropplant1"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+
+                <!--Beneficiary Adhar-->
+                <TextView
+                    android:id="@+id/stype1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cropplant"
+                    android:layout_marginTop="25dp"
+                    android:text="Soil Type"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/stype"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/stype1"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+                <!--Beneficiary Mobile-->
+                <TextView
+                    android:id="@+id/sthick1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stype"
+                    android:layout_marginTop="25dp"
+                    android:text="Soil Thickness"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/sthick"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/sthick1"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+                <!--Crop Name-->
+                <TextView
+                    android:id="@+id/n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sthick"
+                    android:layout_marginTop="25dp"
+                    android:text="No. of Main-Lines Pipes"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/nom"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/n"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+
+                <!--Total Area-->
+                <TextView
+                    android:id="@+id/nn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nom"
+                    android:layout_marginTop="25dp"
+                    android:text="Number of sub-line pipes"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/nnn"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/nn"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" />
+
+
+                <!--Sanction Amount-->
+                <!--extView
+                    android:id="@+id/sanction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/area1"
+                    android:layout_marginTop="25dp"
+                    android:text="Sanction Amount"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/sanction1"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/sanction"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="#f50057"
+                    android:hint="Enter here"
+                    android:inputType="textPersonName" /-->
+
+
+                <!-- Field that are to be entered by 3rd party officer -->
+                <!-- ****************************************************************************************************************-->
+
+                <!--Mainline pipe-->
+
+        <Button
+            android:id="@+id/btnsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nnn"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:text="Submit"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/profile_btn"/>
+
+        <Button
+            android:id="@+id/upl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nnn"
+            android:layout_margin="8dp"
+            android:background="@drawable/profile_btn"
+            android:layout_alignParentLeft="true"
+            android:text="Upload"
+            style="@style/Base.Widget.AppCompat.Button.Borderless" />
+
+    </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,134 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!--<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools = "http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height = "match_parent"-->
+    <!--tools:context = ".AdharMainActivity"-->
+    <!--android:paddingLeft="13dp"-->
+    <!--android:paddingRight="13dp"-->
+    <!--android:background="@mipmap/background">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:id="@+id/main">-->
+
+    <!--<TextView android:text = "Hortivation"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height = "wrap_content"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:id = "@+id/textview"-->
+        <!--android:textSize = "50dp"-->
+        <!--android:layout_alignParentTop ="true"-->
+        <!--android:layout_centerHorizontal ="true"  />-->
+
+    <!--<TextView-->
+        <!--android:layout_width = "wrap_content"-->
+        <!--android:layout_height = "wrap_content"-->
+        <!--android:text = "Farmer Details"-->
+        <!--android:id = "@+id/textView"-->
+        <!--android:layout_below = "@+id/textview"-->
+        <!--android:layout_centerHorizontal = "true"-->
+        <!--android:textColor = "#B71C1C"-->
+        <!--android:textSize = "35dp"-->
+        <!--android:layout_marginBottom="20dp"/>-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MimsActivity"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:background="@mipmap/backggggd">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:alpha="0.6"
+            android:background="#adffffff">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+
+            android:id="@+id/main">
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "Farmer Details"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                 android:id = "@+id/textView"
+                android:layout_centerHorizontal = "true"
+                android:textColor = "#000"
+                android:textSize = "50dp"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="180dp"
+        android:layout_alignParentStart="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#beffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/main">
+
+    <EditText
+        android:id="@+id/editTextadhar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:inputType="number"
+        android:maxLength="12"
+        android:focusable="true"
+        android:hint="Enter Aadhar number"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#000"
+        android:backgroundTint="#000"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendAdhar"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextadhar"
+        android:text="login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn_bg2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="5dp"
+        android:text="Cancel"
+        android:background="@drawable/login_btn_bg2"/>
+
+
+        <ProgressBar
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressbar"/>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
